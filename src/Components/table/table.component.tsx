@@ -101,7 +101,7 @@ class TableExample extends React.Component<Props, State> {
               iconType={MSTeamsIconType.CallMissed}
               iconWeight={MSTeamsIconWeight.Light}
             />
-            <span>Missed call</span>
+           <span>Missed call</span>
           </div>
         );
     }
@@ -134,7 +134,7 @@ class TableExample extends React.Component<Props, State> {
                   <TBody>
                     <Tr>
                       <Td>Name</Td>
-                      <Td>Type</Td>
+                      <Td style={{paddingLeft:'10%'}}>Type</Td>
                       <Td>Duration</Td>
                       <Td>Date</Td>
                     </Tr>
@@ -146,7 +146,7 @@ class TableExample extends React.Component<Props, State> {
                             alt="Avatar"
                             className="avatar"
                           />
-                          <span>{item.name} </span>
+                          &nbsp; <span>{item.name} </span>
                         </Td>
                         <Td>
 
@@ -159,6 +159,8 @@ class TableExample extends React.Component<Props, State> {
                           <span>{item.Date}</span>
 
                           <IconButton
+                          iconWeight={MSTeamsIconWeight.Regular}
+                            className='table-call-icon'
                             style={{
                               background: "white",
                               color: "#BEBBB8",
